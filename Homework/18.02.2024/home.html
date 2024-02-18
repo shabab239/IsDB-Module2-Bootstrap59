@@ -14,6 +14,9 @@
     .carousel-item {
       height: 400px;
     }
+    #intro-content p{
+      text-align: justify;
+    }
   </style>
 </head>
 
@@ -22,7 +25,9 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">
+        <img src="images/isdb.png" height="50px" width="auto" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,23 +38,22 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Courses
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">JEE</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">C#.Net</a></li>
+              <li><a class="dropdown-item" href="#">WPDF</a></li>
+              <li><a class="dropdown-item" href="#">GAVE</a></li>
+              <li><a class="dropdown-item" href="#">DDD</a></li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -75,21 +79,21 @@
         <div class="carousel-item active">
           <img src="images/carousel/1.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Hello World!</h3>
+            <h2>Hello World!</h2>
             <p>I hope you are doing well.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="images/carousel/2.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Hello Again!</h3>
+            <h2>Hello Again!</h2>
             <p>Things are good, innit?</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="images/carousel/3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Hola!</h3>
+          <div class="carousel-caption d-none d-md-block" style="color: yellow;">
+            <h2>Hola!</h2>
             <p>¿Cómo estás?</p>
           </div>
         </div>
@@ -106,60 +110,109 @@
       </button>
     </div>
 
+    <div class="row mt-3 mb-5">
+      <div class="col-md-3">
+        <div class="row ">
+          <div class="col-md-6">
+            <img class="img-fluid shadow-lg rounded mx-auto d-block" src="images/sq/left-1.jpg" alt="">
+          </div>
+          <div class="col-md-6 mt-3">
+            <img class="img-fluid shadow-lg rounded mx-auto d-block" src="images/sq/left-2.jpg" alt="">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <img class="img-fluid shadow-lg rounded mx-auto d-block" src="images/sq/left-3.jpg" alt="">
+          </div>
+          <div class="col-md-6 mt-3">
+            <img class="img-fluid shadow-lg rounded mx-auto d-block" src="images/sq/left-4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-9 mt-3 mt-md-0" id="intro-content">
+        <h1 class="d-none d-md-block text-success">This Will be hidden on SM and XS</h1>
+        <h1 class="d-block d-md-none text-warning">This Will be shown only on SM and XS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad perferendis voluptates fuga,
+          voluptate dolor, iure quas non explicabo inventore aliquam laudantium quisquam eligendi odit.
+          Commodi soluta sed eaque incidunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad
+          perferendis voluptates fuga,
+          voluptate dolor, iure quas non explicabo inventore aliquam laudantium quisquam eligendi odit.
+          Commodi soluta sed eaque incidunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad
+          perferendis voluptates fuga,
+          voluptate dolor, iure quas non explicabo inventore aliquam laudantium quisquam eligendi odit.
+          Commodi soluta sed eaque incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad perferendis voluptates fuga,
+          voluptate dolor, iure quas non explicabo inventore aliquam laudantium quisquam eligendi odit.
+          Commodi soluta sed eaque incidunt?</p>
+      </div>
+    </div>
+
     <div class="container table-responsive mt-3">
       <table class="table table-bordered table-striped table-hover table-light caption-top">
-        <caption>People</caption>
+        <caption>
+          <h2>People</h2>
+        </caption>
         <thead class="table-primary">
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
             <th scope="col">Handle</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="table-group-divider">
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th scope="row">101</th>
+            <td>Skip</td>
+            <td>Khan</td>
+            <td>@skipkhan</td>
           </tr>
           <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <th scope="row">102</th>
+            <td>Ola</td>
+            <td>Mandola</td>
+            <td>@olaman</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <th scope="row">103</th>
+            <td colspan="2">Xlatan</td>
+            <td>@xlatan</td>
           </tr>
         </tbody>
       </table>
     </div>
 
+    <hr>
 
-    <div class="container">
+    <!-- Contact and Address -->
+    <div class="container mb-5">
 
       <h2>Contact</h2>
       <p>Feel Free to Reach Out to Us!</p>
 
-      <hr>
 
       <div class="row">
         <div class="col-md-6">
-          <div class="h2">
-            Address
+          <div class="row mt-1 mb-1">
+            <div class="col-md-6 h5">
+              Email: skip@yolo.com
+            </div>
+            <div class="col-md-6 h5">
+              Phone: +XXXXXXXX
+            </div>
           </div>
           <div class="h5">
-            Centre for Computer Studies, Dhanmondi
+            Address: Centre for Computer Studies, Dhanmondi
           </div>
-            <iframe
+          <div class="row">
+            <div class="col-md-12">
+              <iframe class="mt-1"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7737.90482042618!2d90.36981820290174!3d23.75434030743904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf4e2bfcfc6b%3A0x137de5767e41336a!2sCentre%20for%20Computer%20Studies%20Ltd.!5e0!3m2!1sen!2sbd!4v1708243033871!5m2!1sen!2sbd"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            </div>
+          </div>
         </div>
 
         <div class="col-md-6">
@@ -185,7 +238,7 @@
               <label for="name">Message</label>
               <textarea class="form-control" name="message" rows="10" required></textarea>
             </div>
-            <div class="text-center mt-3">
+            <div class="float-end mt-3">
               <button class="btn btn-success" type="submit" value="Send Message">Send</button>
             </div>
           </form>
@@ -199,6 +252,13 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Footer</h5>
+      <p class="card-text">Shabab Ahmed@All Rights Reserved</p>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
