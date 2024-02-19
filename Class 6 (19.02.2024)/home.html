@@ -9,6 +9,7 @@
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
@@ -27,10 +28,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-book"></i>
               Courses
             </a>
             <ul class="dropdown-menu">
@@ -45,10 +50,22 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#portfolio">
+              <i class="fa-solid fa-briefcase"></i>
+              Portfolio
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">
+              <i class="fa-solid fa-phone"></i>
+              Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">
+              <i class="fa-solid fa-comments"></i>
+              Feedback
+            </a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -298,6 +315,7 @@
             </div>
             <div class="row">
               <div class="col-md-12">
+                <!-- d-none d-md-block -->
                 <iframe class="mt-1"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7737.90482042618!2d90.36981820290174!3d23.75434030743904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf4e2bfcfc6b%3A0x137de5767e41336a!2sCentre%20for%20Computer%20Studies%20Ltd.!5e0!3m2!1sen!2sbd!4v1708243033871!5m2!1sen!2sbd"
                   width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
@@ -340,6 +358,25 @@
       </div>
     </section>
 
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: black;">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="color: black;">
+          <label for="" style="color: black;">Write your feedback</label> <br>
+          <input type="text" class="form-control">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
