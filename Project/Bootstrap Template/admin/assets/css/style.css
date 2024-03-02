@@ -1,29 +1,35 @@
-body {
-    background-image: linear-gradient(#a2c1d8, white,#a2c1d8);
+.menu{
+    background-color: aliceblue;
+    height: 99vh;
 }
 
-section {
-    padding-bottom: 15vh;
+.menu ul{
+    list-style-type: none;
+    padding: 0;
 }
 
-.carousel-item {
-    height: 60vh;
-    overflow: hidden;
+.menu ul li{
+    background-color: bisque;
+    margin: 20px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 15px;
 }
 
-.carousel-item img {
-    filter: blur(6px);
+.menu ul li:hover{
+    background-color: tomato;
 }
 
-.footer-ul {
-    list-style-type: square;
-}
-
-.footer-ul li a {
+.menu ul li a{
+    display: block;
+    width: 100%;
     text-decoration: none;
     color: black;
+    font-weight: bold;
+    font-size: large;
 }
 
-.footer-ul li a:hover {
-    color: tomato;
+.content{
+    height: 99vh;
+    border-radius: 10px;
+    padding: 15px;
 }

@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(#a2c1d8, white,#a2c1d8);
+    background-image: linear-gradient(#a2c1d8, white, #a2c1d8);
 }
 
 section {
@@ -26,4 +26,35 @@ section {
 
 .footer-ul li a:hover {
     color: tomato;
+}
+
+.blog-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-categories {
+    list-style: none;
+    padding: 0;
+}
+
+.blog-categories li {
+    margin: 5px 0;
+}
+
+.blog-categories li a:hover {
+    color: tomato;
+}
+
+.blog-categories li a {
+    text-decoration: none;
+}
+
+.blog-tags div:hover {
+    cursor: pointer;
+    color: tomato;
+    background-color: aliceblue;
+    border-radius: 10px;
 }

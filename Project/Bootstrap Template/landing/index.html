@@ -13,9 +13,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg" style="background-color: #8fc1e4;">
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #8fc1e4;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <h3>BizHub</h3>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -40,7 +40,7 @@
                         <a class="nav-link" href="#team-section">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="blog.html" target="_blank">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact-section">Contact</a>
@@ -48,13 +48,13 @@
                 </ul>
             </div>
             <div class="d-flex">
-                <button class="btn btn-outline-success me-1" type="button">
+                <button class="btn btn-outline-success me-1" type="button" onclick="window.location='tel:+8801700000000'">
                     <i class="fa-solid fa-phone"></i>
                 </button>
-                <button class="btn btn-outline-success me-1" type="button">
+                <button class="btn btn-outline-success me-1" type="button" onclick="window.location='//api.whatsapp.com/send?phone=+8801700000000&text=Hola'">
                     <i class="fa-brands fa-whatsapp"></i>
                 </button>
-                <button class="btn btn-outline-success" type="button" onclick="window.location = 'admin/login.html'">
+                <button class="btn btn-outline-success" type="button" onclick="window.open('../admin/login.html')">
                     Login
                 </button>
             </div>
