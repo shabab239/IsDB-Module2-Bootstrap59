@@ -6,13 +6,21 @@
 .menu ul{
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu ul li{
-    background-color: bisque;
-    margin: 20px;
+    /* background-color: bisque; */
+    display: block;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px;
+    /* margin: 20px;
     padding: 10px 10px 10px 20px;
-    border-radius: 15px;
+    border-radius: 15px; */
 }
 
 .menu ul li:hover{

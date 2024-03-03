@@ -1,0 +1,43 @@
+.menu{
+    background-color: aliceblue;
+    height: 99vh;
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu ul li{
+    /* background-color: bisque; */
+    display: block;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px;
+    /* margin: 20px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 15px; */
+}
+
+.menu ul li:hover{
+    background-color: tomato;
+}
+
+.menu ul li a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.content{
+    height: 99vh;
+    border-radius: 10px;
+    padding: 15px;
+}

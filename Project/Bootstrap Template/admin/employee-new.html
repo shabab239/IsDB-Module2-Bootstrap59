@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Employee</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-md-12 d-flex justify-content-between">
+            <h4>New Employee</h4>
+            <h5>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" aria-current="page">Admin</li>
+                        <li class="breadcrumb-item active" aria-current="page">Employees</li>
+                        <li class="breadcrumb-item active" aria-current="page">New Employee</li>
+                    </ol>
+                </nav>
+            </h5>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <form action="" method="">
+            <div class="row">
+                <div class="col-md-6">
+    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="Full Name" required maxlength="100">
+                        </div>
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="Date of Birth" onfocus="(this.type='date')">
+                        </div>
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="Telephone Number">
+                        </div>
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="Mobile Number" required>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Present Address"></textarea>
+                                <label>Present Address</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Permanent Address"></textarea>
+                                <label>Permanent Address</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <input type="submit" class="btn btn-success me-2" value="Submit">
+                            <input type="reset" class="btn btn-warning" value="Reset">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/fontawesome/all.min.js"></script>
+</body>
+
+</html>
