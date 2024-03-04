@@ -3,7 +3,7 @@ body {
 }
 
 section {
-    padding-bottom: 15vh;
+    padding-bottom: 10vh;
 }
 
 .anchor {
@@ -79,6 +79,27 @@ section {
     transform: scale(1.04);
 }
 
-.portfolio-img:hover {
+/* .portfolio-img:hover {
     transform: scale(1.05);
+} */
+
+.portfolio-overlay {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.sm-welcome{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    background-color: aliceblue;
+    opacity: 80%;
 }

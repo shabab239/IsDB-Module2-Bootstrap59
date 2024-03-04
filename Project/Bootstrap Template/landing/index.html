@@ -40,18 +40,20 @@
                         <a class="nav-link" href="#team-section">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html" target="_blank">Blog</a>
+                        <a class="nav-link" href="#contact-section">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-section">Contact</a>
+                        <a class="nav-link" href="blog.html" target="_blank">Blog</a>
                     </li>
                 </ul>
             </div>
             <div class="d-flex">
-                <button class="btn btn-outline-success me-1" type="button" onclick="window.location='tel:+8801700000000'">
+                <button class="btn btn-outline-success me-1" type="button"
+                    onclick="window.location='tel:+8801700000000'">
                     <i class="fa-solid fa-phone"></i>
                 </button>
-                <button class="btn btn-outline-success me-1" type="button" onclick="window.location='//api.whatsapp.com/send?phone=+8801700000000&text=Hola'">
+                <button class="btn btn-outline-success me-1" type="button"
+                    onclick="window.location='//api.whatsapp.com/send?phone=+8801700000000&text=Hola'">
                     <i class="fa-brands fa-whatsapp"></i>
                 </button>
                 <button class="btn btn-outline-success" type="button" onclick="window.open('../admin/login.html')">
@@ -109,7 +111,7 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
+                <div class="carousel-item active" data-bs-interval="3000">
                     <img src="assets/images/carousel/carousel-1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Welcome to BizHub</h1>
@@ -121,7 +123,7 @@
                             new heights. Get ready to revolutionize the way you work with BizHub.</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-item" data-bs-interval="3000">
                     <img src="assets/images/carousel/carousel-2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Elevate Your Efficiency with BizHub</h1>
@@ -132,7 +134,7 @@
                             apart.</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-item" data-bs-interval="3000">
                     <img src="assets/images/carousel/carousel-3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Empower Your Business Growth</h1>
@@ -154,6 +156,17 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div>
+    </section>
+
+    <section class="d-block d-md-none">
+        <div class="row">
+            <div class="col-md-12 position-relative">
+                <h3 class="sm-welcome">
+                    Welcome to BizHub!
+                </h3>
+                <img src="assets/images/carousel/carousel-1.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
     </section>
 
@@ -227,7 +240,7 @@
                     and our tools are designed to help businesses navigate complexities, streamline processes, and
                     achieve remarkable results.
 
-                    <h5>Our Vision: Shaping the Future of Business</h5>
+                    <h5 class="mt-2">Our Vision: Shaping the Future of Business</h5>
 
                     As we move forward, our vision is to be at the forefront of shaping the future of business. We
                     envision a world where every organization, regardless of size or industry, has the tools and
@@ -257,13 +270,14 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2 d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-laptop d-none d-md-block" style="width: 90%; height: auto;"></i>
+                                    <i class="fa-solid fa-laptop d-none d-md-block"
+                                        style="width: 90%; height: auto;"></i>
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="card-title">Web Application</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">View Services</a>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#web-service-modal">View Services</a>
                                 </div>
                             </div>
                         </div>
@@ -274,13 +288,14 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2 d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-mobile d-none d-md-block" style="width: 90%; height: auto;"></i>
+                                    <i class="fa-solid fa-mobile d-none d-md-block"
+                                        style="width: 90%; height: auto;"></i>
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="card-title">Mobile Application</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">View Services</a>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mobile-service-modal">View Services</a>
                                 </div>
                             </div>
                         </div>
@@ -293,13 +308,14 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2 d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-cloud d-none d-md-block" style="width: 90%; height: auto;"></i>
+                                    <i class="fa-solid fa-cloud d-none d-md-block"
+                                        style="width: 90%; height: auto;"></i>
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="card-title">Cloud Services</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">View Services</a>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cloud-service-modal">View Services</a>
                                 </div>
                             </div>
                         </div>
@@ -310,13 +326,14 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2 d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-business-time d-none d-md-block" style="width: 90%; height: auto;"></i>
+                                    <i class="fa-solid fa-business-time d-none d-md-block"
+                                        style="width: 90%; height: auto;"></i>
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="card-title">Enterprise Solutions</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">View Services</a>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enterprise-service-modal">View Services</a>
                                 </div>
                             </div>
                         </div>
@@ -339,27 +356,26 @@
                 </div>
             </div>
             <div class="row mt-2">
-                <div class="col-md-4">
-                    <img class="portfolio-img" src="assets/images/portfolio/1.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
+                <div class="col-md-4 position-relative">
+                    <div class="portfolio-overlay">
+                        <h5>Technology</h5>
+                    </div>
+                    <img class="portfolio-img" src="assets/images/portfolio/1.jpg" style="padding: 15px;" height="100%"
+                        width="100%" alt="">
                 </div>
-                <div class="col-md-4">
-                    <img class="portfolio-img" src="assets/images/portfolio/2.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
-
+                <div class="col-md-4 position-relative">
+                    <div class="portfolio-overlay">
+                        <h5>Business Solutions</h5>
+                    </div>
+                    <img class="portfolio-img" src="assets/images/portfolio/2.jpg" style="padding: 15px;" height="100%"
+                        width="100%" alt="">
                 </div>
-                <div class="col-md-4">
-                    <img class="portfolio-img" src="assets/images/portfolio/3.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
-
-                </div>
-                <div class="col-md-4">
-                    <img class="portfolio-img" src="assets/images/portfolio/4.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
-
-                </div>
-                <div class="col-md-4">
-                    <img class="portfolio-img" src="assets/images/portfolio/1.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
-
-                </div>
-                <div class="col-md-4">
-                    <img class="portfolio-img" src="assets/images/portfolio/2.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
+                <div class="col-md-4 position-relative">
+                    <div class="portfolio-overlay">
+                        <h5>Customer Support Services</h5>
+                    </div>
+                    <img class="portfolio-img" src="assets/images/portfolio/3.jpg" style="padding: 15px;" height="100%"
+                        width="100%" alt="">
 
                 </div>
             </div>
@@ -592,7 +608,8 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-1">
-                            <i class="fa-solid fa-location-crosshairs d-none d-md-block" style="height: 100%; width: 100%;"></i>
+                            <i class="fa-solid fa-location-crosshairs d-none d-md-block"
+                                style="height: 100%; width: 100%;"></i>
                         </div>
                         <div class="col-md-11">
                             <h4>Location</h4>
@@ -694,7 +711,194 @@
 
     </div>
 
-
+    <div class="modal fade" id="web-service-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 50%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Services (Web Application)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered table-striped table-hover">
+                        <tr class="table-primary">
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Price</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Bell</td>
+                            <td>School Management Software</td>
+                            <td>BDT. 2000</td>
+                            <td>1 Month</td>
+                        </tr>
+                        <tr>
+                            <td>BookWorm</td>
+                            <td>Library Management System</td>
+                            <td>BDT. 2500</td>
+                            <td>2 Months</td>
+                        </tr>
+                        <tr>
+                            <td>HealthHub</td>
+                            <td>Healthcare Management Software</td>
+                            <td>BDT. 3500</td>
+                            <td>3 Months</td>
+                        </tr>
+                        <tr>
+                            <td>OfficeFlow</td>
+                            <td>Office Productivity Suite</td>
+                            <td>BDT. 1800</td>
+                            <td>1 Month</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mobile-service-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 50%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Services (Mobile Application)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered table-striped table-hover">
+                        <tr class="table-primary">
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Price</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>AppLaunch</td>
+                            <td>Mobile App Development Platform</td>
+                            <td>BDT. 3000</td>
+                            <td>2 Months</td>
+                        </tr>
+                        <tr>
+                            <td>SocialPulse</td>
+                            <td>Social Media Integration App</td>
+                            <td>BDT. 2500</td>
+                            <td>1 Month</td>
+                        </tr>
+                        <tr>
+                            <td>FitTrack</td>
+                            <td>Fitness Tracking Application</td>
+                            <td>BDT. 2800</td>
+                            <td>1.5 Months</td>
+                        </tr>
+                        <tr>
+                            <td>EduConnect</td>
+                            <td>Educational App for Schools</td>
+                            <td>BDT. 3200</td>
+                            <td>2.5 Months</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cloud-service-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 50%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Services (Cloud Services)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered table-striped table-hover">
+                        <tr class="table-primary">
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Price</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>CloudFlex</td>
+                            <td>Cloud Infrastructure Service</td>
+                            <td>BDT. 5000</td>
+                            <td>3 Months</td>
+                        </tr>
+                        <tr>
+                            <td>DataShield</td>
+                            <td>Data Security and Encryption Service</td>
+                            <td>BDT. 4200</td>
+                            <td>2 Months</td>
+                        </tr>
+                        <tr>
+                            <td>AICompute</td>
+                            <td>AI and Machine Learning Processing</td>
+                            <td>BDT. 5500</td>
+                            <td>4 Months</td>
+                        </tr>
+                        <tr>
+                            <td>BackupHub</td>
+                            <td>Automated Backup and Recovery</td>
+                            <td>BDT. 4800</td>
+                            <td>2.5 Months</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="enterprise-service-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 50%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Services (Enterprise Solutions)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered table-striped table-hover">
+                        <tr class="table-primary">
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Price</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>EnterPrism</td>
+                            <td>Enterprise Resource Planning (ERP)</td>
+                            <td>BDT. 6000</td>
+                            <td>4 Months</td>
+                        </tr>
+                        <tr>
+                            <td>CollabSphere</td>
+                            <td>Collaboration and Communication Platform</td>
+                            <td>BDT. 4500</td>
+                            <td>2 Months</td>
+                        </tr>
+                        <tr>
+                            <td>SmartWare</td>
+                            <td>Inventory and Warehouse Management</td>
+                            <td>BDT. 5200</td>
+                            <td>3 Months</td>
+                        </tr>
+                        <tr>
+                            <td>HRNavigator</td>
+                            <td>Human Resources Management System</td>
+                            <td>BDT. 5800</td>
+                            <td>3.5 Months</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/fontawesome/all.min.js"></script>
