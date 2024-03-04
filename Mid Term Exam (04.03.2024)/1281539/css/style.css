@@ -1,0 +1,21 @@
+.nav-link:hover {
+    transform: scale(1.05);
+}
+
+.sidebar-ul {
+    list-style-type: none;
+    padding: 0 5px;
+}
+
+.sidebar-ul li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sidebar-ul li a:hover {
+    color: tomato;
+    transform: scale(1.04);
+}
