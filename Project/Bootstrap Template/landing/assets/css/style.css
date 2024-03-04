@@ -6,6 +6,17 @@ section {
     padding-bottom: 15vh;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -30vh;
+    visibility: hidden;
+}
+
+.nav-link:hover {
+    transform: scale(1.05);
+}
+
 .carousel-item {
     height: 60vh;
     overflow: hidden;
@@ -57,4 +68,17 @@ section {
     color: tomato;
     background-color: aliceblue;
     border-radius: 10px;
+}
+
+.card,
+.portfolio-img {
+    transition: all .5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+.portfolio-img:hover {
+    transform: scale(1.05);
 }

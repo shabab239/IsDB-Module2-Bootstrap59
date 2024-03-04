@@ -17,13 +17,13 @@
     <div class="container-fluid">
 
         <div class="row">
-            <div class="col-md-2 menu">
+            <div class="col-md-2 menu d-none d-md-block">
                 <div class="text-center mt-2 fs-3">
                     BizHub Admin
                 </div>
                 <hr>
                 <ul>
-                    <li><a href=""><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
                     <li><a href="projects.html" target="content-iframe"><i class="fa-solid fa-diagram-project"></i>
                             Projects</a></li>
                     <li><a href="clients.html" target="content-iframe"><i class="fa-solid fa-building"></i> Clients</a>
@@ -31,6 +31,36 @@
                     <li><a href="employees.html" target="content-iframe"><i class="fa-solid fa-user"></i> Employees</a>
                     </li>
                 </ul>
+            </div>
+
+            <div class="col-md-2 d-block d-md-none">
+                <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #f0f8ff;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="home.html">
+                            <h3>BizHub Admin</h3>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav" style="font-weight: bold;">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="projects.html" target="content-iframe">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="clients.html" target="content-iframe">Clients</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="employees.html" target="content-iframe">Employees</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
 
             <div class="col-md-10 content">

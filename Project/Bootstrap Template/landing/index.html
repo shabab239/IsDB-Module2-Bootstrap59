@@ -13,7 +13,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #8fc1e4;">
+    <nav class="navbar navbar-expand-lg sticky-top d-none d-md-block" style="background-color: #8fc1e4;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <h3>BizHub</h3>
@@ -61,8 +61,45 @@
         </div>
     </nav>
 
-    <section>
-        <div id="carouselExampleCaptions" class="carousel slide">
+    <nav class="navbar navbar-expand-lg sticky-top d-block d-md-none" style="background-color: #8fc1e4;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <h3>BizHub</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services-section">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio-section">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team-section">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html" target="_blank">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="d-none d-md-block">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -72,7 +109,7 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="2000">
                     <img src="assets/images/carousel/carousel-1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Welcome to BizHub</h1>
@@ -84,7 +121,7 @@
                             new heights. Get ready to revolutionize the way you work with BizHub.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                     <img src="assets/images/carousel/carousel-2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Elevate Your Efficiency with BizHub</h1>
@@ -95,7 +132,7 @@
                             apart.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                     <img src="assets/images/carousel/carousel-3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Empower Your Business Growth</h1>
@@ -171,10 +208,11 @@
             </div>
         </section> -->
 
-        <section id="about-section">
+        <section>
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>About Us</h2>
+                    <a class="anchor" id="about-section"></a> <!-- For fixing heading being under sticky navbar -->
                 </div>
             </div>
             <div class="row mt-2">
@@ -184,7 +222,7 @@
                 <div class="col-md-8" style="text-align: justify;">
                     <h5>Our Mission: Transforming Challenges into Opportunities</h5>
 
-                    At [Your Software Name], our mission is to transform challenges into opportunities by providing
+                    At BizHub, our mission is to transform challenges into opportunities by providing
                     robust, user-friendly software as a service. We believe that every obstacle is a chance for growth,
                     and our tools are designed to help businesses navigate complexities, streamline processes, and
                     achieve remarkable results.
@@ -195,16 +233,17 @@
                     envision a world where every organization, regardless of size or industry, has the tools and
                     resources to thrive in the digital age.
 
-                    Join us on this journey. Explore the possibilities with [Your Software Name] and let's unlock new
+                    Join us on this journey. Explore the possibilities with BizHub and let's unlock new
                     levels of success together. Welcome to a future where innovation meets achievement!
                 </div>
             </div>
         </section>
 
-        <section id="services-section">
+        <section>
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>Services</h2>
+                    <a class="anchor" id="services-section"></a>
                     <p>Embark on a transformative journey with BizHub services. Our tailored solutions are
                         crafted to meet the unique needs of your business. From cutting-edge technology implementations
                         to seamless integrations, we provide a suite of services designed to elevate your operations,
@@ -218,7 +257,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2 d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-laptop" style="width: 90%; height: auto;"></i>
+                                    <i class="fa-solid fa-laptop d-none d-md-block" style="width: 90%; height: auto;"></i>
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="card-title">Web Application</h5>
@@ -235,7 +274,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2 d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-mobile" style="width: 90%; height: auto;"></i>
+                                    <i class="fa-solid fa-mobile d-none d-md-block" style="width: 90%; height: auto;"></i>
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="card-title">Mobile Application</h5>
@@ -254,7 +293,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2 d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-cloud" style="width: 90%; height: auto;"></i>
+                                    <i class="fa-solid fa-cloud d-none d-md-block" style="width: 90%; height: auto;"></i>
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="card-title">Cloud Services</h5>
@@ -271,7 +310,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-2 d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-business-time" style="width: 90%; height: auto;"></i>
+                                    <i class="fa-solid fa-business-time d-none d-md-block" style="width: 90%; height: auto;"></i>
                                 </div>
                                 <div class="col-md-10">
                                     <h5 class="card-title">Enterprise Solutions</h5>
@@ -287,10 +326,11 @@
 
         </section>
 
-        <section id="portfolio-section">
+        <section>
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>Portfolio</h2>
+                    <a class="anchor" id="portfolio-section"></a>
                     <p>Dive into our portfolio and witness the success stories of businesses that have embraced our
                         services. Each project is a testament to our commitment to innovation and excellence. From
                         startups to enterprises, our diverse portfolio showcases the impact our solutions have had
@@ -300,36 +340,36 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-4">
-                    <img src="assets/images/portfolio/1.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
+                    <img class="portfolio-img" src="assets/images/portfolio/1.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/images/portfolio/2.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
+                    <img class="portfolio-img" src="assets/images/portfolio/2.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
 
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/images/portfolio/3.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
+                    <img class="portfolio-img" src="assets/images/portfolio/3.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
 
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/images/portfolio/4.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
+                    <img class="portfolio-img" src="assets/images/portfolio/4.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
 
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/images/portfolio/1.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
+                    <img class="portfolio-img" src="assets/images/portfolio/1.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
 
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/images/portfolio/2.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
+                    <img class="portfolio-img" src="assets/images/portfolio/2.jpg" style="padding: 15px;" height="100%" width="100%" alt="">
 
                 </div>
             </div>
         </section>
 
-
-        <section id="team-section">
+        <section>
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>Team</h2>
+                    <a class="anchor" id="team-section"></a>
                     <p>Meet our passionate and creative Team.</p>
                 </div>
             </div>
@@ -477,10 +517,11 @@
         </section>
 
 
-        <section id="faq-section">
+        <section>
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>F.A.Q.</h2>
+                    <a class="anchor" id="faq-section"></a>
                     <p>See what others have asked before.</p>
                 </div>
             </div>
@@ -537,10 +578,11 @@
             </div>
         </section>
 
-        <section id="contact-section">
+        <section>
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>Contact Us</h2>
+                    <a class="anchor" id="contact-section"></a>
                     <p>If you have any queries in mind, please feel free to contact us.</p>
                 </div>
             </div>
@@ -550,7 +592,7 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-1">
-                            <i class="fa-solid fa-location-crosshairs" style="height: 100%; width: 100%;"></i>
+                            <i class="fa-solid fa-location-crosshairs d-none d-md-block" style="height: 100%; width: 100%;"></i>
                         </div>
                         <div class="col-md-11">
                             <h4>Location</h4>
@@ -559,7 +601,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-1">
-                            <i class="fa-solid fa-envelope" style="height: 100%; width: 100%;"></i>
+                            <i class="fa-solid fa-envelope d-none d-md-block" style="height: 100%; width: 100%;"></i>
                         </div>
                         <div class="col-md-11">
                             <h4>Email</h4>
@@ -568,7 +610,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-1">
-                            <i class="fa-solid fa-envelope" style="height: 100%; width: 100%;"></i>
+                            <i class="fa-solid fa-phone d-none d-md-block" style="height: 100%; width: 100%;"></i>
                         </div>
                         <div class="col-md-11">
                             <h4>Call</h4>
